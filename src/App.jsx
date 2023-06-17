@@ -1,8 +1,32 @@
-// eslint-disable-next-line no-unused-vars
 import React from "react";
+import {
+  Blog,
+  Features,
+  Footer,
+  Header,
+  Possibility,
+  WhatGpt,
+} from "./containers";
+
+import { Article, Brand, Cta, Feature, Navbar } from "./components";
+import "./App.scss";
 
 const App = () => {
-  return <h1>GPT-3</h1>;
+  return (
+    <div className="App">
+      <div className="gradientBg">
+        <Navbar />
+        <Header />
+      </div>
+      <Brand />
+      <WhatGpt />
+      <Features />
+      <Possibility />
+      <Cta />
+      <Blog />
+      <Footer />
+    </div>
+  );
 };
 
 export default App;
