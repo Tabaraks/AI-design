@@ -1,0 +1,146 @@
+.gptNav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;   
+    padding: 2rem 6rem;
+    .gptNavItems{
+        flex: 1;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .navLinks{
+            display: flex;
+            align-items: center;
+        }
+        .btnContainer{
+            display: flex;
+            align-items: center;
+        }
+        .gptNavLogo{
+            display: flex;
+            margin-right: 2rem; 
+            .logo{
+                width: 62px;
+                height: 16px;
+            }
+        }
+        .gptNavItemWrapper{
+            display: flex;
+            
+        }
+        .navText{
+            color: #fff;
+            font-family: var(--font-family);
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 25px;
+            text-transform: capitalize;
+            margin: 0 1rem;
+            cursor: pointer;
+        }
+        .navBtn{
+            display: flex;
+            align-items: center;
+            .signUpBtn{
+                padding: .7rem 2.3rem;
+                font-family: var(--font-family);
+                background: #FF4820;
+                border-radius: 5px;
+                color: white;
+                font-size: 18px;
+                line-height: 25px;
+                outline: none;
+                cursor: pointer;
+                border: none;
+            }
+        }
+        .gptPhoneMenu{
+            display: none;
+            margin-left: 1rem;
+            position: relative;
+            .mobileIcon{
+                cursor: pointer;
+            }
+            .gptMobileNavWrapper{
+                display: flex;
+                justify-content: flex-end;
+                align-items: flex-end;
+                text-align: end;
+                background: var(--color-footer);
+                padding: 1rem 2rem;
+                position: absolute;
+                top: 50px;
+                right: 0;
+                margin-top: 1rem;
+                min-width: 210px;
+                border-radius: 5px;
+                box-shadow: 0 0 5 rgba(0,0,0,.2);
+                p{
+                    margin: 1rem 0;
+                }
+                .gptNavItems{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: inherit;
+                    .gptMobileBtn{
+                        display: none;
+                    }
+                }
+            }
+        }
+    }   
+}   
+
+@media screen and (max-width:1050px) {
+    .gptNavItemWrapper{
+        display: none !important;
+    }
+    .gptPhoneMenu{
+        display: flex !important;
+    }
+   
+    
+}
+
+@media screen and (max-width:700px) {
+    .gptNavItemWrapper{
+        display: none !important;
+    }
+    .gptPhoneMenu{
+        display: flex !important;
+    }
+    .gptNav{
+        padding: 2rem 4rem; 
+    }
+   
+    
+}
+
+@media screen and (max-width:550px) {
+    .navBtn{
+        display: none !important; 
+    }
+    .gptMobileNavWrapper{
+        top: 40px !important;
+    }
+   
+    .gptMobileBtn{
+        display: block !important;
+        .signUpBtn{
+            padding: .7rem 2.3rem;
+            font-family: var(--font-family);
+            background: #FF4820;
+            border-radius: 5px;
+            color: white;
+            font-size: 18px;
+            line-height: 25px;
+            outline: none;
+            cursor: pointer;
+            border: none;
+        }
+    }
+    .gptNav{
+        padding: 2rem ; 
+    }
+    
+}

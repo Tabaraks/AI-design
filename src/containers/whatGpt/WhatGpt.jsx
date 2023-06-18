@@ -1,7 +1,7 @@
 import React from "react";
 
 const WhatGpt = () => {
-  return <div>WhatGpt</div>;
+  return <div></div>;
 };
 
 export default WhatGpt;

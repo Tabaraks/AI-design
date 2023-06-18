@@ -2,7 +2,7 @@ import React from "react";
 import "./cta.scss";
 
 const Cta = () => {
-  return <div>Cta</div>;
+  return <div></div>;
 };
 
 export default Cta;
