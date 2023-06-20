@@ -4,7 +4,7 @@ import "./button.scss";
 const Button = ({ btntext, btnStyle = false }) => {
   return (
     <button
-      className={`signUpBtn ${btnStyle ? "btnFormatting" : ""}`}
+      className={`signUpBtn ${btnStyle ? "headerFormatting" : ""}`}
       type="button"
     >
       {btntext}

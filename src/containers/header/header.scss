@@ -1,6 +1,7 @@
 .headWrapper{
     display: flex;
     justify-content: space-between;
+    margin-bottom: 50px;
     .headerContent{
         display: flex;
         flex-direction: column;
@@ -43,7 +44,7 @@
             justify-content: space-between;
             align-items: center;
             margin-top: 2rem;
-            gap: 30px;
+            
         }
         .heading{
             font-weight: 800;
